@@ -1,52 +1,106 @@
+/* styles.css */
+
+/* Basic body styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Sets a clean, sans-serif font */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
+/* Header styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for spacing */
 }
 
+/* Navigation styles */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
 }
 
+/* Navigation list items */
 nav ul li {
-    margin: 0 15px;
+    display: inline; /* Displays list items in a row */
+    margin-right: 15px; /* Space between each item */
 }
 
+/* Navigation links */
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* White text for links */
+    text-decoration: none; /* Removes underline from links */
 }
 
+/* Main content styling */
 main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    display: flex; /* Enables Flexbox layout */
+    justify-content: space-between; /* Space between columns */
+    padding: 20px; /* Padding around main content */
 }
 
-.left-column, .right-column {
-    flex: 1;
-    margin: 10px;
+/* Left column (cards) styling */
+.left-column {
+    flex: 2; /* Takes up more space than the right column */
+    margin-right: 20px; /* Space between columns */
 }
 
+/* Individual card styling */
 .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: center;
+    border: 1px solid #ddd; /* Light border around cards */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 10px; /* Inner padding for content */
 }
 
+/* Image styling in cards */
+.card img {
+    max-width: 100%; /* Ensures image doesn't exceed card width */
+    height: auto; /* Maintains aspect ratio of images */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Right column (contact form) styling */
+.right-column {
+    flex: 1; /* Takes up less space than the left column */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 20px; /* Padding around the form */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Form styling */
+form {
+    display: flex; /* Enables Flexbox layout for form elements */
+    flex-direction: column; /* Stacks elements vertically */
+}
+
+/* Label styling */
+form label {
+    margin-top: 10px; /* Space above each label */
+}
+
+/* Input field styling */
+form input {
+    padding: 10px; /* Padding inside input fields */
+    margin-top: 5px; /* Space above each input field */
+    margin-bottom: 15px; /* Adds space below each input field */
+}
+
+/* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    text-align: center; /* Center aligns footer content */
+    padding: 20px; /* Padding for spacing */
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+}
+
+/* Social media icon styling */
+footer a {
+    color: white; /* White color for social media links */
+    margin: 0 10px; /* Space between icons */
+    text-decoration: none; /* Removes underline from links */
+}
+
+footer a:hover {
+    color: #ddd; /* Light color on hover for feedback */
 }
